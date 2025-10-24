@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Hyphae Lamps</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Schibsted Grotesk", sans-serif;
+    background-color: #e8f1eb;
+    background-image: url(https://images.pexels.com/photos/681119/pexels-photo-681119.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #f5f5f5;
+  }
+
+  header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(56, 99, 80, 0.55);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    box-shadow: inset 0 -6px 25px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  }
+
+  header p {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #dcefe4;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 850px;
+    margin: -3rem auto 3rem;
+    padding: 0 1rem;
+  }
+
+  section {
+    background-color: rgba(67, 126, 96, 0.85);
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(3px);
+    transition: transform 0.2s ease;
+    font-family:"Schibsted Grotesk";
+  }
+
+  section:hover {
+    transform: scale(1.01);
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 0;
+    color: #f0fff0;
+    border-left: 4px;
+    padding-left: 0.6rem;
+  }
+
+  p {
+    line-height: 1.7;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  }
+
+  ol {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+
+
+
+  img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 0.8rem;
+    margin-top: 0.8rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: block;
+  }
+
+  #reflexion {
+    background-color: rgba(37, 122, 94, 0.9);
+  }
+
+#lamparas {
+  width: 200px;
+    max-width: 200px;
+    border-radius: 0.8rem;
+    margin-top: 0.8rem;
+}
+  footer {
+    text-align: center;
+    background-color: rgba(174, 213, 129, 0.9);
+    color: #2e4736;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 2px solid rgba(255,255,255,0.4);
+  }
+
+  footer span {
+    display: block;
+    margin-top: 0.4rem;
+    font-weight: 600;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hyphae Lamps</h1>
+  <p>Cuando la naturaleza inspira al diseño: una exploración de la biomímesis y la forma viva en el objeto cotidiano.</p>
+</header>
+
+<main>
+  <section>
+    <h2>¿Qué es?</h2>
+    <p>Las Hyphae Lamps son una serie de lámparas generativas inspiradas en la forma en que se desarrollan las venas de las hojas. Cada pieza es única, cultivada digitalmente mediante simulación computacional y fabricada con impresión 3D. Los accesorios LED de bajo consumo proyectan sombras ramificadas, creando una atmósfera orgánica y ligera.</p>
+  </section>
+
+  <section>
+    <h2>¿Cómo funcionan?</h2>
+    <img src="DiagramaHyphae.jpg" alt="Diagrama del proceso de crecimiento digital">
+    <p>Las lámparas se cultivan en un software de diseño personalizado que creamos en C++ usando CGAL. La red de ramificación evoca hojas, coral y raíces sin replicar con precisión ninguna forma natural. Cada lámpara comienza desde un volumen base y un conjunto de puntos de raíz; la estructura emerge a través de un proceso iterativo a medida que las raíces crecen en un entorno lleno de auxina.</p>
+  </section>
+
+  <section>
+    <h2>Biomímesis</h2>
+    <p>El proyecto se enmarca en la biomímesis, entendida como el estudio y aplicación de los principios funcionales de la naturaleza para resolver problemas de diseño. Más allá de reproducir una forma natural, Hyphae Lamps emula los procesos de crecimiento, trasladando el comportamiento de las células vegetales al lenguaje del algoritmo.</p>
+  </section>
+
+  <section>
+    <h2>"No hay dos lámparas iguales"</h2>
+    <p>Cada hoja tiene sus propias peculiaridades: entre las especies, los patrones difieren drásticamente; pueden ser radiales como un lirio, paralelos como una brizna de hierba o reticulados como una cáscara de tomatillo.</p>
+  </section>
+
+  <section>
+    <h2>Eficiencia</h2>
+    <p>Las lámparas se cultivan digitalmente mediante un software creado en C++ con CGAL y Cinder. Cada lámpara:</p>
+    <ol>
+      <li>Ilumina mediante un conjunto de 3 LED Cree.</li>
+      <li>Consume solo 3,6 W de electricidad.</li>
+      <li>Su vida útil estimada supera las 50.000 horas (casi 6 años de uso continuo).</li>
+    </ol> 
+
+
+  </section>
+
+
+      <img src="https://n-e-r-v-o-u-s.com/shop/images/8/99/hyphaeLamp_1_large.jpg">
+    </div>
+
+      <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2013/11/05/6967205996dd372e75cfo.1506057052.5179.jpg">
+    </div>
+
+      <img src="https://n-e-r-v-o-u-s.com/projects/i.php?/000/009/Lamp-inside,medium_large.1415290725.jpg">
+  
+  <section>
+    <h2>Colonización del espacio</h2>
+    <p>Proceso de crecimiento iterativo de redes de líneas ramificadas basado en la distribución de fuentes de auxina que atraen las líneas, evocando patrones de expansión vegetal.</p>
+  </section>
+
+  <section id="reflexion">
+    <p><em>Hyphae Lamps</em> representa la fusión entre mundos que parecían distantes. La observación se volvió clave bajo la metodología del diseño: cómo crece, se adapta y se organiza la vida para ser abstraída y traducida a nuevos lenguajes visuales.  
+    Sencillez y sensibilidad en un proyecto digital que evoca un proceso vivo, generando entre luces y sombras un ambiente que entrega confort y curiosidad ante lo orgánico y cotidiano que suele pasar desapercibido.  
+    Finalmente, busca reflexionar sobre la belleza existente en los patrones naturales y cómo el ser humano puede colaborar con la naturaleza sin invadirla.</p>
+  </section>
+</main>
+
+<footer>
+  <span>Karina Contreras · Damaris Donoso · Valentina Fritis · Amanda Gajardo · Millaray Rojas · Isidora Vega</span>
+</footer>
+
+</body>
+</html>
